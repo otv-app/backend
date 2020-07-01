@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39F7AC38533248EC347F25D5 /* Pods_OTVModelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C34401CEBF4F2BC13434B08C /* Pods_OTVModelTests.framework */; };
+		8E26EA8A0043985B73211417 /* Pods_OTVModel_OTVModelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B7B1972EF05470D66AFDB8 /* Pods_OTVModel_OTVModelUITests.framework */; };
+		B07750F5A90BF15990C9B506 /* Pods_OTVModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1260C42DE1AD3EB48D5620 /* Pods_OTVModel.framework */; };
 		F6F2338224A6BB05003566E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2338124A6BB05003566E3 /* AppDelegate.swift */; };
 		F6F2338424A6BB05003566E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2338324A6BB05003566E3 /* SceneDelegate.swift */; };
 		F6F2338624A6BB05003566E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2338524A6BB05003566E3 /* ContentView.swift */; };
@@ -15,6 +18,16 @@
 		F6F2338E24A6BB19003566E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F2338C24A6BB19003566E3 /* LaunchScreen.storyboard */; };
 		F6F2339924A6BB19003566E3 /* OTVModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2339824A6BB19003566E3 /* OTVModelTests.swift */; };
 		F6F233A424A6BB19003566E3 /* OTVModelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F233A324A6BB19003566E3 /* OTVModelUITests.swift */; };
+		F6F233B224A6C4FE003566E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6F233B124A6C4FD003566E3 /* GoogleService-Info.plist */; };
+		F6F233B324A6C4FE003566E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6F233B124A6C4FD003566E3 /* GoogleService-Info.plist */; };
+		F6F233B424A6C4FE003566E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6F233B124A6C4FD003566E3 /* GoogleService-Info.plist */; };
+		F6F233B624A6CAA8003566E3 /* YoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F233B524A6CAA8003566E3 /* YoutubeVideo.swift */; };
+		F6F233B724A6CAA8003566E3 /* YoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F233B524A6CAA8003566E3 /* YoutubeVideo.swift */; };
+		F6F233B824A6CAA8003566E3 /* YoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F233B524A6CAA8003566E3 /* YoutubeVideo.swift */; };
+		F6F233BA24A6DE3C003566E3 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F233B924A6DE3C003566E3 /* Keys.swift */; };
+		F6F233BB24A6DE3C003566E3 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F233B924A6DE3C003566E3 /* Keys.swift */; };
+		F6F233BC24A6DE3C003566E3 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F233B924A6DE3C003566E3 /* Keys.swift */; };
+		F6F233BE24A6F07D003566E3 /* YoutubeVideoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F233BD24A6F07D003566E3 /* YoutubeVideoTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33C67681D3A7F9320F8A3DA1 /* Pods-OTVModel-OTVModelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTVModel-OTVModelUITests.release.xcconfig"; path = "Target Support Files/Pods-OTVModel-OTVModelUITests/Pods-OTVModel-OTVModelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		418CD5235612013AD081C5D4 /* Pods-OTVModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTVModel.release.xcconfig"; path = "Target Support Files/Pods-OTVModel/Pods-OTVModel.release.xcconfig"; sourceTree = "<group>"; };
+		46AA953D8606059724B037A5 /* Pods-OTVModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTVModel.debug.xcconfig"; path = "Target Support Files/Pods-OTVModel/Pods-OTVModel.debug.xcconfig"; sourceTree = "<group>"; };
+		7599D058724FC048910FFB07 /* Pods-OTVModel-OTVModelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTVModel-OTVModelUITests.debug.xcconfig"; path = "Target Support Files/Pods-OTVModel-OTVModelUITests/Pods-OTVModel-OTVModelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9525BDA06604F5D6D74F25A7 /* Pods-OTVModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTVModelTests.debug.xcconfig"; path = "Target Support Files/Pods-OTVModelTests/Pods-OTVModelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96587575ED3044BA1496CC1F /* Pods-OTVModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTVModelTests.release.xcconfig"; path = "Target Support Files/Pods-OTVModelTests/Pods-OTVModelTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2B7B1972EF05470D66AFDB8 /* Pods_OTVModel_OTVModelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTVModel_OTVModelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1260C42DE1AD3EB48D5620 /* Pods_OTVModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTVModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34401CEBF4F2BC13434B08C /* Pods_OTVModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTVModelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F2337E24A6BB05003566E3 /* OTVModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTVModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F2338124A6BB05003566E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F2338324A6BB05003566E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +71,10 @@
 		F6F2339F24A6BB19003566E3 /* OTVModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTVModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F233A324A6BB19003566E3 /* OTVModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTVModelUITests.swift; sourceTree = "<group>"; };
 		F6F233A524A6BB19003566E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F233B124A6C4FD003566E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "OTVModel/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F6F233B524A6CAA8003566E3 /* YoutubeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideo.swift; sourceTree = "<group>"; };
+		F6F233B924A6DE3C003566E3 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		F6F233BD24A6F07D003566E3 /* YoutubeVideoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07750F5A90BF15990C9B506 /* Pods_OTVModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F7AC38533248EC347F25D5 /* Pods_OTVModelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E26EA8A0043985B73211417 /* Pods_OTVModel_OTVModelUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61867B5FC71A45E424C4DF99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD1260C42DE1AD3EB48D5620 /* Pods_OTVModel.framework */,
+				B2B7B1972EF05470D66AFDB8 /* Pods_OTVModel_OTVModelUITests.framework */,
+				C34401CEBF4F2BC13434B08C /* Pods_OTVModelTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F420EE6D6BF47C3FB7777380 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46AA953D8606059724B037A5 /* Pods-OTVModel.debug.xcconfig */,
+				418CD5235612013AD081C5D4 /* Pods-OTVModel.release.xcconfig */,
+				7599D058724FC048910FFB07 /* Pods-OTVModel-OTVModelUITests.debug.xcconfig */,
+				33C67681D3A7F9320F8A3DA1 /* Pods-OTVModel-OTVModelUITests.release.xcconfig */,
+				9525BDA06604F5D6D74F25A7 /* Pods-OTVModelTests.debug.xcconfig */,
+				96587575ED3044BA1496CC1F /* Pods-OTVModelTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F6F2337524A6BB05003566E3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +135,8 @@
 				F6F2339724A6BB19003566E3 /* OTVModelTests */,
 				F6F233A224A6BB19003566E3 /* OTVModelUITests */,
 				F6F2337F24A6BB05003566E3 /* Products */,
+				F420EE6D6BF47C3FB7777380 /* Pods */,
+				61867B5FC71A45E424C4DF99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +153,7 @@
 		F6F2338024A6BB05003566E3 /* OTVModel */ = {
 			isa = PBXGroup;
 			children = (
+				F6F233B124A6C4FD003566E3 /* GoogleService-Info.plist */,
 				F6F2338124A6BB05003566E3 /* AppDelegate.swift */,
 				F6F2338324A6BB05003566E3 /* SceneDelegate.swift */,
 				F6F2338524A6BB05003566E3 /* ContentView.swift */,
@@ -106,6 +161,8 @@
 				F6F2338C24A6BB19003566E3 /* LaunchScreen.storyboard */,
 				F6F2338F24A6BB19003566E3 /* Info.plist */,
 				F6F2338924A6BB19003566E3 /* Preview Content */,
+				F6F233B524A6CAA8003566E3 /* YoutubeVideo.swift */,
+				F6F233B924A6DE3C003566E3 /* Keys.swift */,
 			);
 			path = OTVModel;
 			sourceTree = "<group>";
@@ -123,6 +180,7 @@
 			children = (
 				F6F2339824A6BB19003566E3 /* OTVModelTests.swift */,
 				F6F2339A24A6BB19003566E3 /* Info.plist */,
+				F6F233BD24A6F07D003566E3 /* YoutubeVideoTest.swift */,
 			);
 			path = OTVModelTests;
 			sourceTree = "<group>";
@@ -143,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F233A824A6BB19003566E3 /* Build configuration list for PBXNativeTarget "OTVModel" */;
 			buildPhases = (
+				7A15F22B69B0AB3EEFC7C3AE /* [CP] Check Pods Manifest.lock */,
 				F6F2337A24A6BB05003566E3 /* Sources */,
 				F6F2337B24A6BB05003566E3 /* Frameworks */,
 				F6F2337C24A6BB05003566E3 /* Resources */,
+				01CDB705FABDD0D4052DCB22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F233AB24A6BB19003566E3 /* Build configuration list for PBXNativeTarget "OTVModelTests" */;
 			buildPhases = (
+				755A6DCB8177824EA49DD902 /* [CP] Check Pods Manifest.lock */,
 				F6F2339024A6BB19003566E3 /* Sources */,
 				F6F2339124A6BB19003566E3 /* Frameworks */,
 				F6F2339224A6BB19003566E3 /* Resources */,
@@ -178,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F233AE24A6BB19003566E3 /* Build configuration list for PBXNativeTarget "OTVModelUITests" */;
 			buildPhases = (
+				0D49CC49723F1287E39FF030 /* [CP] Check Pods Manifest.lock */,
 				F6F2339B24A6BB19003566E3 /* Sources */,
 				F6F2339C24A6BB19003566E3 /* Frameworks */,
 				F6F2339D24A6BB19003566E3 /* Resources */,
+				D5FB03BD45618AE0B1A5F408 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F2338E24A6BB19003566E3 /* LaunchScreen.storyboard in Resources */,
+				F6F233B224A6C4FE003566E3 /* GoogleService-Info.plist in Resources */,
 				F6F2338B24A6BB19003566E3 /* Preview Assets.xcassets in Resources */,
 				F6F2338824A6BB19003566E3 /* Assets.xcassets in Resources */,
 			);
@@ -250,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F233B324A6C4FE003566E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,10 +322,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F233B424A6C4FE003566E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01CDB705FABDD0D4052DCB22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTVModel/Pods-OTVModel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTVModel/Pods-OTVModel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTVModel/Pods-OTVModel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D49CC49723F1287E39FF030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTVModel-OTVModelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755A6DCB8177824EA49DD902 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTVModelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A15F22B69B0AB3EEFC7C3AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTVModel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5FB03BD45618AE0B1A5F408 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTVModel-OTVModelUITests/Pods-OTVModel-OTVModelUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTVModel-OTVModelUITests/Pods-OTVModel-OTVModelUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTVModel-OTVModelUITests/Pods-OTVModel-OTVModelUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6F2337A24A6BB05003566E3 /* Sources */ = {
@@ -268,8 +437,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F2338224A6BB05003566E3 /* AppDelegate.swift in Sources */,
+				F6F233B624A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
 				F6F2338424A6BB05003566E3 /* SceneDelegate.swift in Sources */,
 				F6F2338624A6BB05003566E3 /* ContentView.swift in Sources */,
+				F6F233BA24A6DE3C003566E3 /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +449,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F2339924A6BB19003566E3 /* OTVModelTests.swift in Sources */,
+				F6F233BE24A6F07D003566E3 /* YoutubeVideoTest.swift in Sources */,
+				F6F233BB24A6DE3C003566E3 /* Keys.swift in Sources */,
+				F6F233B724A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +460,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F233A424A6BB19003566E3 /* OTVModelUITests.swift in Sources */,
+				F6F233BC24A6DE3C003566E3 /* Keys.swift in Sources */,
+				F6F233B824A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +608,7 @@
 		};
 		F6F233A924A6BB19003566E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46AA953D8606059724B037A5 /* Pods-OTVModel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +628,7 @@
 		};
 		F6F233AA24A6BB19003566E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418CD5235612013AD081C5D4 /* Pods-OTVModel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +648,7 @@
 		};
 		F6F233AC24A6BB19003566E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9525BDA06604F5D6D74F25A7 /* Pods-OTVModelTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +670,7 @@
 		};
 		F6F233AD24A6BB19003566E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96587575ED3044BA1496CC1F /* Pods-OTVModelTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +692,7 @@
 		};
 		F6F233AF24A6BB19003566E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7599D058724FC048910FFB07 /* Pods-OTVModel-OTVModelUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +712,7 @@
 		};
 		F6F233B024A6BB19003566E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C67681D3A7F9320F8A3DA1 /* Pods-OTVModel-OTVModelUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
