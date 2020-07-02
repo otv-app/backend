@@ -36,7 +36,7 @@ class YoutubeVideoTest: XCTestCase {
                       "title": "What's the Difference Between Cloud Firestore & Firebase Realtime Database? #AskFirebase",
                       "thumbnail": "https://i.ytimg.com/vi/KeIx-mArUck/default.jpg",
                       "duration": "PT44M35S",
-                      "date": "2018-01-22T22:00:08Z"
+                      "date": "2018-07-01T2:40:08Z"
         ]
         
         
@@ -46,41 +46,68 @@ class YoutubeVideoTest: XCTestCase {
         try XCTAssertEqual("2 years ago", testYoutube.getHowLongAgo())
         
         // one year ago
-        testYoutube.rawDuration = "2019-01-22T22:00:08Z"
+        testYoutube.rawDate = "2019-07-01T22:00:08Z"
         try XCTAssertEqual("1 year ago", testYoutube.getHowLongAgo())
         
         // more than one month ago
-        testYoutube.rawDuration = "2020-01-22T22:00:08Z"
-        try XCTAssertEqual("6 months ago", testYoutube.getHowLongAgo())
-        
-        // one month ago
-        testYoutube.rawDuration = "2020-06-22T22:00:08Z"
-        try XCTAssertEqual("1 month ago", testYoutube.getHowLongAgo())
-        
-        // more than a day ago, less than a week
-        testYoutube.rawDuration = "2020-07-26T22:00:08Z"
+        testYoutube.rawDate = "2020-01-22T22:00:08Z"
         try XCTAssertEqual("5 months ago", testYoutube.getHowLongAgo())
         
-        //https://stackoverflow.com/questions/4084341/how-to-calculate-time-in-hours-between-two-dates-in-ios/4084356
+        // one month ago
+        testYoutube.rawDate = "2020-06-22T22:00:08Z"
+        try XCTAssertEqual("1 week ago", testYoutube.getHowLongAgo())
+        
     }
     
-    func testGetDateTimeVideo() throws {
+    func testChangingRawDurationDirectly() throws {
         let ytDict = ["id": "KeIx-mArUck",
                       "title": "What's the Difference Between Cloud Firestore & Firebase Realtime Database? #AskFirebase",
                       "thumbnail": "https://i.ytimg.com/vi/KeIx-mArUck/default.jpg",
                       "duration": "PT44M35S",
-                      "date": "2018-01-22T22:00:08Z"
+                      "date": "2018-07-01T2:40:08Z"
         ]
         
+        
         let testYoutube = YoutubeVideo(dict: ytDict)
+        let testYoutubeDate = testYoutube.getVideoDateTime()
+        var calendar = Calendar.current
         
-        let dateTime = testYoutube.getDateTimeVideo()
+        calendar.timeZone = TimeZone(abbreviation: "UTC")!
         
-        XCTAssertEqual(2018, dateTime.year)
-        XCTAssertEqual(1, dateTime.month)
-        XCTAssertEqual(22, dateTime.day)
-        XCTAssertEqual(22, dateTime.hour)
-        XCTAssertEqual(0, dateTime.minute)
-        XCTAssertEqual(8, dateTime.second)
+        let year1 = calendar.component(.year, from: testYoutubeDate)
+        let month1 = calendar.component(.month, from: testYoutubeDate)
+        let day1 = calendar.component(.day, from: testYoutubeDate)
+        let hour1 = calendar.component(.hour, from: testYoutubeDate)
+        let minutes1 = calendar.component(.minute, from:testYoutubeDate)
+        let seconds1 = calendar.component(.second, from:testYoutubeDate)
+        
+        XCTAssertEqual(2018, year1)
+        XCTAssertEqual(7, month1)
+        XCTAssertEqual(1, day1)
+        XCTAssertEqual(2, hour1)
+        XCTAssertEqual(40, minutes1)
+        XCTAssertEqual(8, seconds1)
+        
+        testYoutube.rawDate = "2001-4-15T01:23:02Z"
+        
+        let testYoutubeDate2 = testYoutube.getVideoDateTime()
+        var calendar2 = Calendar.current
+        
+        calendar2.timeZone = TimeZone(abbreviation: "UTC")!
+        
+        let year2 = calendar.component(.year, from: testYoutubeDate2)
+        let month2 = calendar.component(.month, from: testYoutubeDate2)
+        let day2 = calendar.component(.day, from: testYoutubeDate2)
+        let hour2 = calendar.component(.hour, from: testYoutubeDate2)
+        let minutes2 = calendar.component(.minute, from:testYoutubeDate2)
+        let seconds2 = calendar.component(.second, from:testYoutubeDate2)
+        
+        XCTAssertEqual(2001, year2)
+        XCTAssertEqual(4, month2)
+        XCTAssertEqual(15, day2)
+        XCTAssertEqual(1, hour2)
+        XCTAssertEqual(23, minutes2)
+        XCTAssertEqual(2, seconds2)
+        
     }
 }

@@ -23,81 +23,117 @@ class YoutubeVideo {
     }
     
     func getHowLongAgo() throws -> String {
-        let currentDate = Date()
-        var calendar = Calendar.current
+        let localDate: Date = self.getLocalDateTime()
+        let videoDate: Date = self.getVideoDateTime()
         
-        calendar.timeZone = TimeZone(abbreviation: "UTC")!
-        print(calendar.timeZone)
+        let cal = Calendar.current
         
-        let currentYear = calendar.component(.year, from: currentDate)
-        let currentMonth = calendar.component(.month, from: currentDate)
-        let currentDay = calendar.component(.day, from: currentDate)
-        let currentHour = calendar.component(.hour, from: currentDate)
-        let currentMinutes = calendar.component(.minute, from:currentDate)
-        let currentSeconds = calendar.component(.second, from:currentDate)
+        let components = cal.dateComponents([.second], from: videoDate, to: localDate)
+        let diff = components.second!
         
-        let videoDateTime = self.getDateTimeVideo()
+        if diff < 0 {
+            throw YoutubeVideoError.negativeVideoDateTimeDifference
+        }
         
-        if currentYear > videoDateTime.year {
-            if currentYear - videoDateTime.year == 1 {
-                return "\(currentYear - videoDateTime.year) year ago"
-            } else {
-                return "\(currentYear - videoDateTime.year) years ago"
+        // seconds
+        if diff < 60 {
+            if diff == 1 {
+                return "1 second ago"
+            }
+            else {
+                return "\(diff) seconds ago"
             }
         }
-        else if currentMonth > videoDateTime.month {
-            if currentMonth - videoDateTime.month == 1 {
-                return "\(currentMonth - videoDateTime.month) month ago"
+        
+        let minutes = diff / 60
+        // minutes
+        if minutes < 60 {
+            if minutes == 1 {
+                return "1 minute ago"
             } else {
-                return "\(currentMonth - videoDateTime.month) months ago"
+                return "\(minutes) minutes ago"
             }
         }
-        else if currentDay > videoDateTime.day {
-            let diffDay = currentDay - videoDateTime.day
-            
-            if diffDay > 0 && diffDay < 7 {
-                if diffDay == 1 {
-                    return "1 day ago"
-                } else {
-                    return "\(diffDay) days ago"
-                }
-            } else if diffDay >= 7 && diffDay < 14 {
-                return "1 week ago"
-            } else if diffDay >= 14 && diffDay < 21 {
-                return "2 weeks ago"
-            } else if diffDay >= 21 && diffDay < 32 {
-                return "3 weeks ago"
-            } else {
-                throw YoutubeVideoError.failedHowLongAgo
-            }
-        }
-        else if currentHour > videoDateTime.hour {
-            if currentHour - videoDateTime.hour == 1 {
+        
+        let hours = minutes / 60
+        // hours
+        if hours < 24 {
+            if hours == 1 {
                 return "1 hour ago"
             } else {
-                return "\(currentHour - videoDateTime.hour) hours ago"
+                return "\(hours) hours ago"
             }
         }
-        else if currentMinutes > videoDateTime.minute {
-            if currentMinutes - videoDateTime.minute == 1 {
-                return "1 minute ago"
+        
+        let days = hours / 24
+        if days < 7 {
+            if days == 1 {
+                return "1 day ago"
             } else {
-                return "\(currentMinutes - videoDateTime.minute) minutes ago"
+                return "\(days) days ago"
             }
         }
-        else if currentSeconds > videoDateTime.second {
-            if currentSeconds - videoDateTime.second == 1 {
-                return "1 minute ago"
+        
+        let weeks = days / 7
+        if weeks < 4 {
+            if weeks == 1 {
+                return "1 week ago"
             } else {
-                return "\(currentSeconds - videoDateTime.second) minutes ago"
+                return "\(weeks) weeks ago"
             }
         }
-        else {
-            throw YoutubeVideoError.failedHowLongAgo
+        
+        let months = weeks/4
+        if months < 12 {
+            if months == 1 {
+                return "1 month ago"
+            } else {
+                return "\(months) months ago"
+            }
         }
+        
+        let years = months / 12
+        if years >= 1 {
+            if years == 1 {
+                return "1 year ago"
+            } else {
+                return "\(years) years ago"
+            }
+        }
+        
+        throw YoutubeVideoError.shouldntGetHere
     }
     
-    func getDateTimeVideo() -> (year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int) {
+   
+    
+    func getLocalDateTime() -> Date {
+        let currentDate = Date()
+       var calendar = Calendar.current
+       
+       calendar.timeZone = TimeZone(abbreviation: "UTC")!
+       
+       let currentYear = calendar.component(.year, from: currentDate)
+       let currentMonth = calendar.component(.month, from: currentDate)
+       let currentDay = calendar.component(.day, from: currentDate)
+       let currentHour = calendar.component(.hour, from: currentDate)
+       let currentMinutes = calendar.component(.minute, from:currentDate)
+       let currentSeconds = calendar.component(.second, from:currentDate)
+        
+        var dateComponents = DateComponents()
+        dateComponents.year = currentYear
+        dateComponents.month = currentMonth
+        dateComponents.day = currentDay
+        dateComponents.timeZone = TimeZone(abbreviation: "UTC")
+        dateComponents.hour = currentHour
+        dateComponents.minute = currentMinutes
+        dateComponents.second = currentSeconds
+        
+        let userCalendar = Calendar.current
+        let someDateTime = userCalendar.date(from: dateComponents)
+        return someDateTime!
+    }
+    
+    func getVideoDateTime() -> Date {
         let firstHalf = self.rawDate.components(separatedBy: "T")[0]
         var secondHalf = self.rawDate.components(separatedBy: "T")[1]
         
@@ -111,11 +147,23 @@ class YoutubeVideo {
         let hour: Int = Int(timeFormat[0])!
         let minute: Int = Int(timeFormat[1])!
         let second: Int = Int(timeFormat[2])!
-        
-        return (year: year, month: month, day: day, hour: hour, minute: minute, second: second)
+    
+        var dateComponents = DateComponents()
+       dateComponents.year = year
+       dateComponents.month = month
+       dateComponents.day = day
+       dateComponents.timeZone = TimeZone(abbreviation: "UTC")
+       dateComponents.hour = hour
+       dateComponents.minute = minute
+       dateComponents.second = second
+       
+       let userCalendar = Calendar.current
+       let someDateTime = userCalendar.date(from: dateComponents)
+       return someDateTime!
     }
     
     enum YoutubeVideoError: Error {
-        case failedHowLongAgo
+        case negativeVideoDateTimeDifference
+        case shouldntGetHere
     }
 }
