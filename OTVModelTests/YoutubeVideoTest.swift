@@ -9,27 +9,27 @@
 import XCTest
 
 class YoutubeVideoTest: XCTestCase {
-
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
     
     func testGetHowLongAgo() throws {
         let ytDict = ["id": "KeIx-mArUck",
@@ -41,7 +41,7 @@ class YoutubeVideoTest: XCTestCase {
         
         
         let testYoutube = YoutubeVideo(dict: ytDict)
-
+        
         // more than one year
         try XCTAssertEqual("2 years ago", testYoutube.getHowLongAgo())
         
@@ -109,5 +109,20 @@ class YoutubeVideoTest: XCTestCase {
         XCTAssertEqual(23, minutes2)
         XCTAssertEqual(2, seconds2)
         
+    }
+    
+    func testGetFormattedDuration() throws{
+        let ytDict = ["id": "KeIx-mArUck",
+                      "title": "What's the Difference Between Cloud Firestore & Firebase Realtime Database? #AskFirebase",
+                      "thumbnail": "https://i.ytimg.com/vi/KeIx-mArUck/default.jpg",
+                      "duration": "PT44M35S",
+                      "date": "2018-07-01T2:40:08Z"
+        ]
+        
+        
+        let testYoutube = YoutubeVideo(dict: ytDict)
+        
+        try XCTAssertEqual("44:35", testYoutube.getFormattedDuration())
+        XCTAssertEqual("PT44M35S", testYoutube.rawDuration)
     }
 }

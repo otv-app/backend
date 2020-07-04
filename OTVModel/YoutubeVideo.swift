@@ -22,6 +22,19 @@ class YoutubeVideo {
         self.rawDate = dict["date"]!
     }
     
+    func getFormattedDuration() throws -> String {
+        if rawDuration.contains("PT") {
+            var newDuration = rawDuration
+            newDuration.removeLast()
+            newDuration.removeFirst(2)
+            
+            let returnedString = newDuration.replacingOccurrences(of: "M", with: ":")
+            return returnedString
+        } else {
+            throw YoutubeVideoError.notProperlyFormatted
+        }
+    }
+    
     func getHowLongAgo() throws -> String {
         let localDate: Date = self.getLocalDateTime()
         let videoDate: Date = self.getVideoDateTime()
@@ -165,5 +178,6 @@ class YoutubeVideo {
     enum YoutubeVideoError: Error {
         case negativeVideoDateTimeDifference
         case shouldntGetHere
+        case notProperlyFormatted
     }
 }

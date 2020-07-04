@@ -7,4 +7,7 @@
 //
 
 import Foundation
-let YTAPIKEY : String = "AIzaSyDicp8qEd84ljPJrnzd388psVJNK3sMN2I"
+
+struct Key {
+    static let YTAPIKEY : String = "AIzaSyDicp8qEd84ljPJrnzd388psVJNK3sMN2I"
+}
