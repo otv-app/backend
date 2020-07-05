@@ -3,4 +3,54 @@
    uuid = "BE4375A6-4EBD-48B7-B7C9-76C853506494"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8E8D6E7-E048-44FA-988B-C297ABA2551C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OTVModel/Utility.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "firebase_test()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8E8D6E7-E048-44FA-988B-C297ABA2551C - c9941af13250bfa0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static OTVModel.Utility.firebase_test() throws -&gt; Swift.String"
+                  moduleName = "OTVModel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickyoon/Documents/OTVModel/OTVModel/Utility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  uuid = "E8E8D6E7-E048-44FA-988B-C297ABA2551C - 6f834793157520d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static OTVModelTests.Utility.firebase_test() throws -&gt; Swift.String"
+                  moduleName = "OTVModelTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickyoon/Documents/OTVModel/OTVModel/Utility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

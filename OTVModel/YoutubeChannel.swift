@@ -19,7 +19,10 @@ class YoutubeChannel {
         let pfpAPIURL = "https://www.googleapis.com/youtube/v3/channels?part=snippet&id=" + id + "&fields=items%2Fsnippet%2Fthumbnails&key=" + Key.YTAPIKEY
         
         self.pfpURL = try Utility.getYoutubePFP(url: pfpAPIURL)
-        self.username = "test"
+        
+        let channelAPIURL = "https://www.googleapis.com/youtube/v3/search?key=" + Key.YTAPIKEY + "&channelId=" + id + "&part=snippet,id&order=date&maxResults=20"
+        
+        self.username = try Utility.getYoutubeUsername(url: channelAPIURL)
     }
 }
 
