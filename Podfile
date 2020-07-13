@@ -9,6 +9,8 @@ target 'OTVModel' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 
 
   target 'OTVModelTests' do

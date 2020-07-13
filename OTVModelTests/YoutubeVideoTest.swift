@@ -40,7 +40,11 @@ class YoutubeVideoTest: XCTestCase {
         ]
         
         
-        let testYoutube = YoutubeVideo(dict: ytDict)
+        let testYoutube = YoutubeVideo(id: "KeIx-mArUck",
+        title: "What's the Difference Between Cloud Firestore & Firebase Realtime Database? #AskFirebase",
+        thumbnailURL: "https://i.ytimg.com/vi/KeIx-mArUck/default.jpg",
+        rawDuration: "PT44M35S",
+        rawDate: "2018-07-01T2:40:08Z")
         
         // more than one year
         try XCTAssertEqual("2 years ago", testYoutube.getHowLongAgo())
@@ -68,7 +72,11 @@ class YoutubeVideoTest: XCTestCase {
         ]
         
         
-        let testYoutube = YoutubeVideo(dict: ytDict)
+        let testYoutube = YoutubeVideo(id: "KeIx-mArUck",
+        title: "What's the Difference Between Cloud Firestore & Firebase Realtime Database? #AskFirebase",
+        thumbnailURL: "https://i.ytimg.com/vi/KeIx-mArUck/default.jpg",
+        rawDuration: "PT44M35S",
+        rawDate: "2018-07-01T2:40:08Z")
         let testYoutubeDate = testYoutube.getVideoDateTime()
         var calendar = Calendar.current
         
@@ -120,7 +128,11 @@ class YoutubeVideoTest: XCTestCase {
         ]
         
         
-        let testYoutube = YoutubeVideo(dict: ytDict)
+        let testYoutube = YoutubeVideo(id: "KeIx-mArUck",
+        title: "What's the Difference Between Cloud Firestore & Firebase Realtime Database? #AskFirebase",
+        thumbnailURL: "https://i.ytimg.com/vi/KeIx-mArUck/default.jpg",
+        rawDuration: "PT44M35S",
+        rawDate: "2018-07-01T2:40:08Z")
         
         try XCTAssertEqual("44:35", testYoutube.getFormattedDuration())
         XCTAssertEqual("PT44M35S", testYoutube.rawDuration)

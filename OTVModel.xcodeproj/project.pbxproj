@@ -10,8 +10,17 @@
 		39F7AC38533248EC347F25D5 /* Pods_OTVModelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C34401CEBF4F2BC13434B08C /* Pods_OTVModelTests.framework */; };
 		8E26EA8A0043985B73211417 /* Pods_OTVModel_OTVModelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B7B1972EF05470D66AFDB8 /* Pods_OTVModel_OTVModelUITests.framework */; };
 		B07750F5A90BF15990C9B506 /* Pods_OTVModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1260C42DE1AD3EB48D5620 /* Pods_OTVModel.framework */; };
+		F60266DF24B7DA8F00132BF2 /* TestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60266DE24B7DA8F00132BF2 /* TestRepository.swift */; };
+		F60266E024B7DA8F00132BF2 /* TestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60266DE24B7DA8F00132BF2 /* TestRepository.swift */; };
+		F60266E124B7DA8F00132BF2 /* TestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60266DE24B7DA8F00132BF2 /* TestRepository.swift */; };
+		F60266E324B7DB3D00132BF2 /* TestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60266E224B7DB3D00132BF2 /* TestTask.swift */; };
+		F60266E424B7DB3D00132BF2 /* TestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60266E224B7DB3D00132BF2 /* TestTask.swift */; };
+		F60266E524B7DB3D00132BF2 /* TestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60266E224B7DB3D00132BF2 /* TestTask.swift */; };
 		F649BA9D24AFBD5C00C3E1E9 /* YoutubeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9C24AFBD5C00C3E1E9 /* YoutubeChannel.swift */; };
 		F649BA9F24AFC61C00C3E1E9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9E24AFC61C00C3E1E9 /* Utility.swift */; };
+		F669850524B2C89700B3A813 /* YoutubeChannelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */; };
+		F66B436324B5193B00593FCB /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B436224B5193B00593FCB /* Tweet.swift */; };
+		F66EEF6624BA9365005E92B4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EEF6524BA9365005E92B4 /* Repository.swift */; };
 		F6C6017324B029F2001CE662 /* UtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C6017224B029F2001CE662 /* UtilityTest.swift */; };
 		F6C6017424B02CEC001CE662 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9E24AFC61C00C3E1E9 /* Utility.swift */; };
 		F6C6017524B02CEF001CE662 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9E24AFC61C00C3E1E9 /* Utility.swift */; };
@@ -64,8 +73,13 @@
 		B2B7B1972EF05470D66AFDB8 /* Pods_OTVModel_OTVModelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTVModel_OTVModelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1260C42DE1AD3EB48D5620 /* Pods_OTVModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTVModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34401CEBF4F2BC13434B08C /* Pods_OTVModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTVModelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60266DE24B7DA8F00132BF2 /* TestRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRepository.swift; sourceTree = "<group>"; };
+		F60266E224B7DB3D00132BF2 /* TestTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTask.swift; sourceTree = "<group>"; };
 		F649BA9C24AFBD5C00C3E1E9 /* YoutubeChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeChannel.swift; sourceTree = "<group>"; };
 		F649BA9E24AFC61C00C3E1E9 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeChannelTest.swift; sourceTree = "<group>"; };
+		F66B436224B5193B00593FCB /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		F66EEF6524BA9365005E92B4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F6C6017224B029F2001CE662 /* UtilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTest.swift; sourceTree = "<group>"; };
 		F6F2337E24A6BB05003566E3 /* OTVModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTVModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F2338124A6BB05003566E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,9 +152,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F60266DC24B7DA0900132BF2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F60266DE24B7DA8F00132BF2 /* TestRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F60266DD24B7DA1D00132BF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6F233B524A6CAA8003566E3 /* YoutubeVideo.swift */,
+				F6F233B924A6DE3C003566E3 /* Keys.swift */,
+				F649BA9C24AFBD5C00C3E1E9 /* YoutubeChannel.swift */,
+				F649BA9E24AFC61C00C3E1E9 /* Utility.swift */,
+				F66B436224B5193B00593FCB /* Tweet.swift */,
+				F60266E224B7DB3D00132BF2 /* TestTask.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F6F2337524A6BB05003566E3 = {
 			isa = PBXGroup;
 			children = (
+				F60266DC24B7DA0900132BF2 /* Repository */,
 				F6F2338024A6BB05003566E3 /* OTVModel */,
 				F6F2339724A6BB19003566E3 /* OTVModelTests */,
 				F6F233A224A6BB19003566E3 /* OTVModelUITests */,
@@ -170,11 +206,8 @@
 				F6F2338724A6BB19003566E3 /* Assets.xcassets */,
 				F6F2338C24A6BB19003566E3 /* LaunchScreen.storyboard */,
 				F6F2338F24A6BB19003566E3 /* Info.plist */,
+				F60266DD24B7DA1D00132BF2 /* Model */,
 				F6F2338924A6BB19003566E3 /* Preview Content */,
-				F6F233B524A6CAA8003566E3 /* YoutubeVideo.swift */,
-				F6F233B924A6DE3C003566E3 /* Keys.swift */,
-				F649BA9C24AFBD5C00C3E1E9 /* YoutubeChannel.swift */,
-				F649BA9E24AFC61C00C3E1E9 /* Utility.swift */,
 			);
 			path = OTVModel;
 			sourceTree = "<group>";
@@ -194,6 +227,8 @@
 				F6F2339A24A6BB19003566E3 /* Info.plist */,
 				F6F233BD24A6F07D003566E3 /* YoutubeVideoTest.swift */,
 				F6C6017224B029F2001CE662 /* UtilityTest.swift */,
+				F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */,
+				F66EEF6524BA9365005E92B4 /* Repository.swift */,
 			);
 			path = OTVModelTests;
 			sourceTree = "<group>";
@@ -449,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60266E324B7DB3D00132BF2 /* TestTask.swift in Sources */,
 				F649BA9F24AFC61C00C3E1E9 /* Utility.swift in Sources */,
 				F6F2338224A6BB05003566E3 /* AppDelegate.swift in Sources */,
 				F6F233B624A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
@@ -456,6 +492,8 @@
 				F6F2338624A6BB05003566E3 /* ContentView.swift in Sources */,
 				F6F233BA24A6DE3C003566E3 /* Keys.swift in Sources */,
 				F649BA9D24AFBD5C00C3E1E9 /* YoutubeChannel.swift in Sources */,
+				F66B436324B5193B00593FCB /* Tweet.swift in Sources */,
+				F60266DF24B7DA8F00132BF2 /* TestRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,13 +501,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60266E424B7DB3D00132BF2 /* TestTask.swift in Sources */,
 				F6F2339924A6BB19003566E3 /* OTVModelTests.swift in Sources */,
+				F669850524B2C89700B3A813 /* YoutubeChannelTest.swift in Sources */,
 				F6F233BE24A6F07D003566E3 /* YoutubeVideoTest.swift in Sources */,
 				F6C6017424B02CEC001CE662 /* Utility.swift in Sources */,
+				F66EEF6624BA9365005E92B4 /* Repository.swift in Sources */,
 				F6F233BB24A6DE3C003566E3 /* Keys.swift in Sources */,
 				F6F233B724A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
 				F6C6017324B029F2001CE662 /* UtilityTest.swift in Sources */,
 				F6C6017824B02DED001CE662 /* YoutubeChannel.swift in Sources */,
+				F60266E024B7DA8F00132BF2 /* TestRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +524,8 @@
 				F6F233BC24A6DE3C003566E3 /* Keys.swift in Sources */,
 				F6F233B824A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
 				F6C6017924B02DEE001CE662 /* YoutubeChannel.swift in Sources */,
+				F60266E124B7DA8F00132BF2 /* TestRepository.swift in Sources */,
+				F60266E524B7DB3D00132BF2 /* TestTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
