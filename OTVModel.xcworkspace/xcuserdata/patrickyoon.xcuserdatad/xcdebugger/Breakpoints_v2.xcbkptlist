@@ -7,47 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9E118CF6-3578-4628-B2AA-2FD7ED08FCEB"
+            uuid = "3FF2E7E3-AEF3-46A3-869F-7AD0A2085A90"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Repository/TestRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "loadData()"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadData(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "9E118CF6-3578-4628-B2AA-2FD7ED08FCEB - 30fa71b11557fd0"
+                  uuid = "3FF2E7E3-AEF3-46A3-869F-7AD0A2085A90 - a2bf2abccdcc47f3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "OTVModel.TestRepository.loadData() -&gt; __C.FIRDocumentReference"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OTVModel.TestRepository.loadData(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
                   moduleName = "OTVModel"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/patrickyoon/Documents/OTVModel/Repository/TestRepository.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "23">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "314">
                </Location>
                <Location
-                  uuid = "9E118CF6-3578-4628-B2AA-2FD7ED08FCEB - 1f40a233b793e980"
+                  uuid = "3FF2E7E3-AEF3-46A3-869F-7AD0A2085A90 - 4c20344269d13f58"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "OTVModelTests.TestRepository.loadData() -&gt; __C.FIRDocumentReference"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OTVModelTests.TestRepository.loadData(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
                   moduleName = "OTVModelTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/patrickyoon/Documents/OTVModel/Repository/TestRepository.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "23">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "314">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -55,7 +55,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "909BF580-CC2D-4FAC-9960-4B5E3B3DCF01"
+            uuid = "0FBE8146-D94D-4AE2-9BC6-E20BAE8F6D7C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -64,22 +64,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "testGetDoc()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DA5EA397-BD9D-4F96-9551-5C6CF1DF2581"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OTVModelTests/Repository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
             landmarkName = "testGetDoc()"
             landmarkType = "7">
          </BreakpointContent>

@@ -33,8 +33,16 @@ class RepositoryTest: XCTestCase {
     func testGetDoc() throws {
         let tr = TestRepository()
         
-        let yo = tr.loadData()
+        let x: String = ""
         
-        XCTAssertEqual("1", yo.get("text"))
+        tr.loadData {
+            success in
+            
+            if success {
+                print("yo")
+            } else {
+                
+            }
+        }
     }
 }

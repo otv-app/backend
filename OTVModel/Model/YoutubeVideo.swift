@@ -9,6 +9,7 @@
 import Foundation
 class YoutubeVideo {
     var id: String
+    var url: String
     var title: String
     var thumbnailURL: String
     var rawDuration: String
@@ -20,6 +21,8 @@ class YoutubeVideo {
         self.thumbnailURL = thumbnailURL
         self.rawDuration = rawDuration
         self.rawDate = rawDate
+        
+        self.url = "https://www.youtube.com/watch?v=" + self.id
     }
     
     func getFormattedDuration() throws -> String {
@@ -27,6 +30,10 @@ class YoutubeVideo {
             var newDuration = rawDuration
             newDuration.removeLast()
             newDuration.removeFirst(2)
+            
+            if newDuration.contains("H") {
+                newDuration = newDuration.replacingOccurrences(of: "H", with: ":")
+            }
             
             let returnedString = newDuration.replacingOccurrences(of: "M", with: ":")
             return returnedString

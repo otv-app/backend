@@ -10,6 +10,7 @@ import Foundation
 
 class YoutubeChannel {
     var id: String
+    var url: String
     var username: String
     var pfpURL: String
     
@@ -23,6 +24,8 @@ class YoutubeChannel {
         let channelAPIURL = "https://www.googleapis.com/youtube/v3/search?key=" + Key.YTAPIKEY + "&channelId=" + id + "&part=snippet,id&order=date&maxResults=20"
         
         self.username = try Utility.getYoutubeUsername(url: channelAPIURL)
+        
+        self.url = "https://www.youtube.com/channel/" + self.id
     }
     
     func getVideos() throws -> [YoutubeVideo] {
