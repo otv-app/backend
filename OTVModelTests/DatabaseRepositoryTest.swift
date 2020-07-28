@@ -51,6 +51,6 @@ class DatabaseRepositoryTest: XCTestCase {
         waitForExpectations(timeout: 10, handler: nil)
         
         XCTAssertEqual(true, testNull)
-        XCTAssertEqual("patrick", tweetList[0].name)
+        XCTAssertEqual("http://pbs.twimg.com/profile_images/711015457134813188/7Qcunhqi_normal.jpg", tweetList[0].pfpURL)
     }
 }

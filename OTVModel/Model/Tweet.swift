@@ -10,7 +10,8 @@ import Foundation
 
 class Tweet {
     let id: String
-    let url: String
+    let tweetURL: String
+    let accountURL: String
     let name: String
     let screenname: String
     let created_at: Date
@@ -19,12 +20,13 @@ class Tweet {
     let retweet_count: Int
     let like_count: Int
     
-    init(id: String, name: String, screenname: String, created_at: Date, text: String, retweet_count: Int, like_count: Int) {
+    init(id: String, name: String, screenname: String, created_at: Date, text: String, pfpURL: String, retweet_count: Int, like_count: Int) {
         self.id = id
         self.name = name
         self.screenname = screenname
-        self.url = "https://twitter.com/" + self.screenname + "/status/" + self.id
-        self.pfpURL = "https://twitter.com/" + self.screenname
+        self.tweetURL = "https://twitter.com/" + self.screenname + "/status/" + self.id
+        self.accountURL = "https://twitter.com/" + self.screenname
+        self.pfpURL = pfpURL
         self.text = text
         self.created_at = created_at
         self.retweet_count = retweet_count

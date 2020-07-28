@@ -31,6 +31,7 @@ class DatabaseRepository {
                                           screenname: docData["screenname"] as! String,
                                           created_at: tempDate,
                                           text: docData["text"] as! String,
+                                          pfpURL: docData["pfp_url"] as! String,
                                           retweet_count: docData["retweet_count"] as! Int,
                                           like_count: docData["favorite_count"] as! Int)
                     tweets.insert(tempTweet, at: 0)
