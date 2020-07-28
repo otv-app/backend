@@ -31,7 +31,7 @@ class Tweet {
         self.like_count = like_count
     }
     
-    func getHowLongAgo() -> String {
-        return ""
+    func getHowLongAgo() throws -> String {
+        return try Utility.getHowLongAgoDates(date1: Utility.getUTCDateTime(currentDate: self.created_at), date2: Utility.getUTCDateTime(currentDate: Date()))
     }
 }

@@ -24,6 +24,7 @@
 		F66703FD24D0BDF300D7E077 /* DatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66703F724D0AF8200D7E077 /* DatabaseRepository.swift */; };
 		F66703FE24D0C51400D7E077 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B436224B5193B00593FCB /* Tweet.swift */; };
 		F66703FF24D0C51500D7E077 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B436224B5193B00593FCB /* Tweet.swift */; };
+		F667040124D0DABC00D7E077 /* TweetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F667040024D0DABB00D7E077 /* TweetTest.swift */; };
 		F669850524B2C89700B3A813 /* YoutubeChannelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */; };
 		F66B436324B5193B00593FCB /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B436224B5193B00593FCB /* Tweet.swift */; };
 		F66EEF6624BA9365005E92B4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EEF6524BA9365005E92B4 /* Repository.swift */; };
@@ -85,6 +86,7 @@
 		F649BA9E24AFC61C00C3E1E9 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		F66703F724D0AF8200D7E077 /* DatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepository.swift; sourceTree = "<group>"; };
 		F66703F924D0BD9B00D7E077 /* DatabaseRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepositoryTest.swift; sourceTree = "<group>"; };
+		F667040024D0DABB00D7E077 /* TweetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTest.swift; sourceTree = "<group>"; };
 		F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeChannelTest.swift; sourceTree = "<group>"; };
 		F66B436224B5193B00593FCB /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		F66EEF6524BA9365005E92B4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */,
 				F66EEF6524BA9365005E92B4 /* Repository.swift */,
 				F66703F924D0BD9B00D7E077 /* DatabaseRepositoryTest.swift */,
+				F667040024D0DABB00D7E077 /* TweetTest.swift */,
 			);
 			path = OTVModelTests;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				F6C6017324B029F2001CE662 /* UtilityTest.swift in Sources */,
 				F6C6017824B02DED001CE662 /* YoutubeChannel.swift in Sources */,
 				F60266E024B7DA8F00132BF2 /* TestRepository.swift in Sources */,
+				F667040124D0DABC00D7E077 /* TweetTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
