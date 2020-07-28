@@ -1,14 +1,14 @@
 //
-//  Repository.swift
+//  DatabaseRepositoryTest.swift
 //  OTVModelTests
 //
-//  Created by Patrick Yoon on 7/11/20.
+//  Created by Patrick Yoon on 7/28/20.
 //  Copyright © 2020 Patrick Yoon. All rights reserved.
 //
 
 import XCTest
 
-class RepositoryTest: XCTestCase {
+class DatabaseRepositoryTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -30,40 +30,27 @@ class RepositoryTest: XCTestCase {
         }
     }
 
-    func testGetDoc() throws {
-        
-        
-        let tr = TestRepository()
-        
-        let x: String = ""
-        /*
-        tr.loadData {
-            success in
-            
-            if success {
-                print("yo")
-            } else {
-                
-            }
-        }*/
-    }
-    
-    func testPostData() throws {
-        let tr = TestRepository()
+    func testGetTweets() throws {
+        let tr = DatabaseRepository()
         
         let expectation = self.expectation(description: "Scaling")
-        var testt: TestTask = TestTask(id: "", pfp: "")
-        var testString: String = ""
+        var testNull = false
         
-        tr.loadData {
-            user in
-            testt = user
+        var tweetList = [Tweet]()
+        
+        tr.getListOfTweets {
+            tweets in
+            if (tweets.count != 0) {
+                testNull = true
+                tweetList = tweets
+            }
             
             expectation.fulfill()
         }
         
         waitForExpectations(timeout: 10, handler: nil)
         
-        XCTAssertEqual("yaya", testt.pfp)
+        XCTAssertEqual(true, testNull)
+        XCTAssertEqual("patrick", tweetList[0].name)
     }
 }

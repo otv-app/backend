@@ -18,6 +18,12 @@
 		F60266E524B7DB3D00132BF2 /* TestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60266E224B7DB3D00132BF2 /* TestTask.swift */; };
 		F649BA9D24AFBD5C00C3E1E9 /* YoutubeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9C24AFBD5C00C3E1E9 /* YoutubeChannel.swift */; };
 		F649BA9F24AFC61C00C3E1E9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9E24AFC61C00C3E1E9 /* Utility.swift */; };
+		F66703F824D0AF8200D7E077 /* DatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66703F724D0AF8200D7E077 /* DatabaseRepository.swift */; };
+		F66703FA24D0BD9B00D7E077 /* DatabaseRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66703F924D0BD9B00D7E077 /* DatabaseRepositoryTest.swift */; };
+		F66703FC24D0BDF200D7E077 /* DatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66703F724D0AF8200D7E077 /* DatabaseRepository.swift */; };
+		F66703FD24D0BDF300D7E077 /* DatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66703F724D0AF8200D7E077 /* DatabaseRepository.swift */; };
+		F66703FE24D0C51400D7E077 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B436224B5193B00593FCB /* Tweet.swift */; };
+		F66703FF24D0C51500D7E077 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B436224B5193B00593FCB /* Tweet.swift */; };
 		F669850524B2C89700B3A813 /* YoutubeChannelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */; };
 		F66B436324B5193B00593FCB /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B436224B5193B00593FCB /* Tweet.swift */; };
 		F66EEF6624BA9365005E92B4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EEF6524BA9365005E92B4 /* Repository.swift */; };
@@ -77,6 +83,8 @@
 		F60266E224B7DB3D00132BF2 /* TestTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTask.swift; sourceTree = "<group>"; };
 		F649BA9C24AFBD5C00C3E1E9 /* YoutubeChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeChannel.swift; sourceTree = "<group>"; };
 		F649BA9E24AFC61C00C3E1E9 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		F66703F724D0AF8200D7E077 /* DatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepository.swift; sourceTree = "<group>"; };
+		F66703F924D0BD9B00D7E077 /* DatabaseRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepositoryTest.swift; sourceTree = "<group>"; };
 		F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeChannelTest.swift; sourceTree = "<group>"; };
 		F66B436224B5193B00593FCB /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		F66EEF6524BA9365005E92B4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -156,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				F60266DE24B7DA8F00132BF2 /* TestRepository.swift */,
+				F66703F724D0AF8200D7E077 /* DatabaseRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -229,6 +238,7 @@
 				F6C6017224B029F2001CE662 /* UtilityTest.swift */,
 				F669850424B2C89700B3A813 /* YoutubeChannelTest.swift */,
 				F66EEF6524BA9365005E92B4 /* Repository.swift */,
+				F66703F924D0BD9B00D7E077 /* DatabaseRepositoryTest.swift */,
 			);
 			path = OTVModelTests;
 			sourceTree = "<group>";
@@ -485,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F60266E324B7DB3D00132BF2 /* TestTask.swift in Sources */,
+				F66703F824D0AF8200D7E077 /* DatabaseRepository.swift in Sources */,
 				F649BA9F24AFC61C00C3E1E9 /* Utility.swift in Sources */,
 				F6F2338224A6BB05003566E3 /* AppDelegate.swift in Sources */,
 				F6F233B624A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
@@ -504,11 +515,14 @@
 				F60266E424B7DB3D00132BF2 /* TestTask.swift in Sources */,
 				F6F2339924A6BB19003566E3 /* OTVModelTests.swift in Sources */,
 				F669850524B2C89700B3A813 /* YoutubeChannelTest.swift in Sources */,
+				F66703FE24D0C51400D7E077 /* Tweet.swift in Sources */,
+				F66703FC24D0BDF200D7E077 /* DatabaseRepository.swift in Sources */,
 				F6F233BE24A6F07D003566E3 /* YoutubeVideoTest.swift in Sources */,
 				F6C6017424B02CEC001CE662 /* Utility.swift in Sources */,
 				F66EEF6624BA9365005E92B4 /* Repository.swift in Sources */,
 				F6F233BB24A6DE3C003566E3 /* Keys.swift in Sources */,
 				F6F233B724A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
+				F66703FA24D0BD9B00D7E077 /* DatabaseRepositoryTest.swift in Sources */,
 				F6C6017324B029F2001CE662 /* UtilityTest.swift in Sources */,
 				F6C6017824B02DED001CE662 /* YoutubeChannel.swift in Sources */,
 				F60266E024B7DA8F00132BF2 /* TestRepository.swift in Sources */,
@@ -519,8 +533,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66703FD24D0BDF300D7E077 /* DatabaseRepository.swift in Sources */,
 				F6C6017524B02CEF001CE662 /* Utility.swift in Sources */,
 				F6F233A424A6BB19003566E3 /* OTVModelUITests.swift in Sources */,
+				F66703FF24D0C51500D7E077 /* Tweet.swift in Sources */,
 				F6F233BC24A6DE3C003566E3 /* Keys.swift in Sources */,
 				F6F233B824A6CAA8003566E3 /* YoutubeVideo.swift in Sources */,
 				F6C6017924B02DEE001CE662 /* YoutubeChannel.swift in Sources */,

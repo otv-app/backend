@@ -10,9 +10,12 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-struct TestTask: Codable, Identifiable {
-    @DocumentID var id: String? = UUID().uuidString
+class TestTask {
+    let id: String
+    let pfp: String
     
-    var text: String
-    var yourMom: Int
+    init(id: String, pfp: String) {
+        self.id = id
+        self.pfp = pfp
+    }
 }

@@ -35,8 +35,7 @@ class UtilityTest: XCTestCase {
     }
 
     func testGetYoutubeChannelUsername() throws {
-        try XCTAssertEqual("Disguised Toast", Utility.getYoutubeUsername(url: "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDicp8qEd84ljPJrnzd388psVJNK3sMN2I&channelId=UCUT8RoNBTJvwW1iErP6-b-A&part=snippet,id&order=date&maxResults=20"))
-    }
+	    }
     
     
     func testGetYoutubeDuration() throws {
