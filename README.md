@@ -1,5 +1,6 @@
 # backend
 in order to add to ur app:
+- create new app on firebase console and get build ID
 - need these in ur Podfile
    - pod 'Firebase/Core'
    - pod 'Firebase/Database'
