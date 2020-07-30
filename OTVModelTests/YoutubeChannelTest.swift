@@ -39,7 +39,7 @@ class YoutubeChannelTest: XCTestCase {
         
         XCTAssertEqual(20, videos.count)
         
-        XCTAssertEqual("2020-07-03T15:39:06Z", videos[0].rawDate)
+        XCTAssertEqual("2020-07-03T15:39:06Z", videos[0].thumbnailURL)
         XCTAssertEqual("2020-04-07T17:19:40Z", videos[19].rawDate)
     }
 }

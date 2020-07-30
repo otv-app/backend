@@ -39,7 +39,7 @@ class YoutubeChannel {
             let rawDurationVid = try Utility.getYoutubeVideoRawDuration(id: videoInfo.id.videoId)
             listOfVideos.append(YoutubeVideo(id: videoInfo.id.videoId,
                                              title: videoInfo.snippet.title,
-                                             thumbnailURL: videoInfo.snippet.thumbnails.defaultThumb.url,
+                                             thumbnailURL: videoInfo.snippet.thumbnails.medium.url,
                                              rawDuration: rawDurationVid,
                                              rawDate: videoInfo.snippet.publishedAt))
         }
