@@ -120,13 +120,6 @@ class YoutubeVideoTest: XCTestCase {
     }
     
     func testGetFormattedDuration() throws{
-        let ytDict = ["id": "KeIx-mArUck",
-                      "title": "What's the Difference Between Cloud Firestore & Firebase Realtime Database? #AskFirebase",
-                      "thumbnail": "https://i.ytimg.com/vi/KeIx-mArUck/default.jpg",
-                      "duration": "PT44M35S",
-                      "date": "2018-07-01T2:40:08Z"
-        ]
-        
         
         let testYoutube = YoutubeVideo(id: "KeIx-mArUck",
         title: "What's the Difference Between Cloud Firestore & Firebase Realtime Database? #AskFirebase",
@@ -136,5 +129,42 @@ class YoutubeVideoTest: XCTestCase {
         
         try XCTAssertEqual("44:35", testYoutube.getFormattedDuration())
         XCTAssertEqual("PT44M35S", testYoutube.rawDuration)
+        
+        
+        
+        
+        testYoutube.rawDuration = "PT8S"
+        try XCTAssertEqual("0:08", testYoutube.getFormattedDuration())
+        XCTAssertEqual("PT8S", testYoutube.rawDuration)
+        
+        testYoutube.rawDuration = "PT19M3S"
+        try XCTAssertEqual("19:03", testYoutube.getFormattedDuration())
+        XCTAssertEqual("PT19M3S", testYoutube.rawDuration)
+        
+        testYoutube.rawDuration = "PT1H4M59S"
+        try XCTAssertEqual("1:04:59", testYoutube.getFormattedDuration())
+        XCTAssertEqual("PT1H4M59S", testYoutube.rawDuration)
+        
+        testYoutube.rawDuration = "PT1H59S"
+        try XCTAssertEqual("1:00:59", testYoutube.getFormattedDuration())
+        XCTAssertEqual("PT1H59S", testYoutube.rawDuration)
+        
+        testYoutube.rawDuration = "PT1H"
+        try XCTAssertEqual("1:00:00", testYoutube.getFormattedDuration())
+        XCTAssertEqual("PT1H", testYoutube.rawDuration)
+        
+        testYoutube.rawDuration = "PT1H2M"
+        try XCTAssertEqual("1:02:00", testYoutube.getFormattedDuration())
+        XCTAssertEqual("PT1H2M", testYoutube.rawDuration)
+        
+        testYoutube.rawDuration = "PT2M"
+        try XCTAssertEqual("2:00", testYoutube.getFormattedDuration())
+        XCTAssertEqual("PT2M", testYoutube.rawDuration)
+    }
+    
+    func testDateUtilityFunctions() throws {
+        XCTAssertEqual(8, DateUtility.durationFrom8601String(durationString: "PT8S").second)
+        
+        XCTAssertEqual(18, DateUtility.durationFrom8601String(durationString: "PT18M5S").minute)
     }
 }

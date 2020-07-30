@@ -33,6 +33,9 @@
 		F6C6017524B02CEF001CE662 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9E24AFC61C00C3E1E9 /* Utility.swift */; };
 		F6C6017824B02DED001CE662 /* YoutubeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9C24AFBD5C00C3E1E9 /* YoutubeChannel.swift */; };
 		F6C6017924B02DEE001CE662 /* YoutubeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649BA9C24AFBD5C00C3E1E9 /* YoutubeChannel.swift */; };
+		F6C8B7B424D36B4F00DC4FB5 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C8B7B324D36B4F00DC4FB5 /* DateUtility.swift */; };
+		F6C8B7B624D36BA800DC4FB5 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C8B7B324D36B4F00DC4FB5 /* DateUtility.swift */; };
+		F6C8B7B724D36BA900DC4FB5 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C8B7B324D36B4F00DC4FB5 /* DateUtility.swift */; };
 		F6F2338224A6BB05003566E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2338124A6BB05003566E3 /* AppDelegate.swift */; };
 		F6F2338424A6BB05003566E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2338324A6BB05003566E3 /* SceneDelegate.swift */; };
 		F6F2338624A6BB05003566E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2338524A6BB05003566E3 /* ContentView.swift */; };
@@ -91,6 +94,7 @@
 		F66B436224B5193B00593FCB /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		F66EEF6524BA9365005E92B4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F6C6017224B029F2001CE662 /* UtilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTest.swift; sourceTree = "<group>"; };
+		F6C8B7B324D36B4F00DC4FB5 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		F6F2337E24A6BB05003566E3 /* OTVModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTVModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F2338124A6BB05003566E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F2338324A6BB05003566E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				F649BA9E24AFC61C00C3E1E9 /* Utility.swift */,
 				F66B436224B5193B00593FCB /* Tweet.swift */,
 				F60266E224B7DB3D00132BF2 /* TestTask.swift */,
+				F6C8B7B324D36B4F00DC4FB5 /* DateUtility.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,6 +512,7 @@
 				F6F233BA24A6DE3C003566E3 /* Keys.swift in Sources */,
 				F649BA9D24AFBD5C00C3E1E9 /* YoutubeChannel.swift in Sources */,
 				F66B436324B5193B00593FCB /* Tweet.swift in Sources */,
+				F6C8B7B424D36B4F00DC4FB5 /* DateUtility.swift in Sources */,
 				F60266DF24B7DA8F00132BF2 /* TestRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +535,7 @@
 				F6C6017324B029F2001CE662 /* UtilityTest.swift in Sources */,
 				F6C6017824B02DED001CE662 /* YoutubeChannel.swift in Sources */,
 				F60266E024B7DA8F00132BF2 /* TestRepository.swift in Sources */,
+				F6C8B7B624D36BA800DC4FB5 /* DateUtility.swift in Sources */,
 				F667040124D0DABC00D7E077 /* TweetTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C8B7B724D36BA900DC4FB5 /* DateUtility.swift in Sources */,
 				F66703FD24D0BDF300D7E077 /* DatabaseRepository.swift in Sources */,
 				F6C6017524B02CEF001CE662 /* Utility.swift in Sources */,
 				F6F233A424A6BB19003566E3 /* OTVModelUITests.swift in Sources */,

@@ -27,15 +27,54 @@ class YoutubeVideo {
     
     func getFormattedDuration() throws -> String {
         if rawDuration.contains("PT") {
-            var newDuration = rawDuration
-            newDuration.removeLast()
-            newDuration.removeFirst(2)
             
-            if newDuration.contains("H") {
-                newDuration = newDuration.replacingOccurrences(of: "H", with: ":")
+            let durationDateComp = DateUtility.durationFrom8601String(durationString: self.rawDuration)
+            
+            print(durationDateComp)
+            
+            let tempDay = durationDateComp.day
+            let tempHour = durationDateComp.hour
+            let tempMinute = durationDateComp.minute
+            let tempSecond = durationDateComp.second
+            
+            var returnedString = ""
+            
+            if tempDay != nil {
+                returnedString += String(tempDay!) + ":"
             }
             
-            let returnedString = newDuration.replacingOccurrences(of: "M", with: ":")
+            if tempHour != nil {
+                if tempHour! < 10 && tempDay != nil {
+                    returnedString += "0" + String(tempHour!) + ":"
+                } else {
+                    returnedString += String(tempHour!) + ":"
+                }
+            } else if tempHour == nil && tempDay != nil {
+                returnedString += "00:"
+            }
+            
+            if tempMinute != nil {
+                if tempMinute! < 10 && (tempHour != nil || tempDay != nil) {
+                    returnedString += "0" + String(tempMinute!) + ":"
+                } else {
+                    returnedString += String(tempMinute!) + ":"
+                }
+            } else if tempMinute == nil && tempHour == nil && tempMinute == nil {
+                returnedString += "0:"
+            } else if tempMinute == nil && (tempHour != nil || tempMinute != nil) {
+                returnedString += "00:"
+            }
+            
+            if tempSecond != nil {
+                if tempSecond! < 10 {
+                    returnedString += "0" + String(tempSecond!)
+                } else {
+                    returnedString += String(tempSecond!)
+                }
+            } else {
+                returnedString += "00"
+            }
+            
             return returnedString
         } else {
             throw YoutubeVideoError.notProperlyFormatted
